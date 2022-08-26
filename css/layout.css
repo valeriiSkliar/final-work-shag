@@ -372,6 +372,7 @@ footer{
     fill: white;
     background-image: url(../img/svg/icons8-twitter.svg);
     background-size: 95%;
+    background-repeat: no-repeat;
 }
 .social-ico-2{
     width: 24px;
@@ -379,6 +380,7 @@ footer{
     fill: white;
     background-image: url(../img/svg/icons8-linkedin.svg);
     background-size: 95%;
+    background-repeat: no-repeat;
 }
 .social-ico-3{
     width: 24px;
@@ -386,6 +388,7 @@ footer{
     fill: white;
     background-image: url(../img/svg/icons8-google-plus.svg);
     background-size: 95%;
+    background-repeat: no-repeat;
 }
 .social-ico-4{
     width: 24px;
@@ -393,10 +396,24 @@ footer{
     fill: white;
     background-image: url(../img/svg/icons8-facebook.svg);
     background-size: 95%;
+    background-repeat: no-repeat;
 }
 
 @media (max-width:1150px) and (min-width:865px){
     /* first-section */
+    .flex-box-1{
+        background-color: #f8f2efb2;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:0.3fr 1fr 1.5fr 0.5fr 2fr 0.3fr;
+        grid-template-rows: 0.2fr 0.1fr 1fr 0.5fr;
+        grid-template-areas:
+            ". hdr hdr hdr hdr ."
+            ". . . . . ."
+            ". main main . video ."
+            ". . . . . .";
+        justify-content: center;
+    }
     .main_h1{
         font-size: 250%;
         line-height: 100%;
@@ -470,17 +487,22 @@ footer{
 @media (max-width:865px) and (min-width:300px) {
     /* first-block */
     .flex-box-1{
-        text-align: left;
         background-color: #f8f2efb2;
-        height: 100vh;
+        height: 100%;
         display: grid;
-        grid-template-columns:1fr;
-        grid-template-rows: 0.05fr 0.1fr 0.3fr 0.5fr;
-        row-gap: 2%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.1fr 0.5fr 1fr;
+        grid-template-areas:
+            "hdr"
+            "."
+            "video"
+            "main"
+            ".";
+        justify-content: center;
     }
     .header_box{
         width: 100vw;
-        grid-area: 1 / 1 / 1 / 1;
+        grid-area: hdr;
     }
     .main_h1{
         text-align: left;
@@ -494,10 +516,12 @@ footer{
         grid-area: 4 / 1 / 4 / 1;
         transform: scale(0.85);
         gap: 30px;
+        grid-area: main;
     }
     .video_box{
         grid-area: 3 / 1 / 3 / 1;
         box-shadow: none;
+        grid-area: video;
     }
     /* second-block */
     .flex-box-2 {
@@ -599,15 +623,34 @@ footer{
         font-size: 1.2em;
     }
     /* gallery-block */
+    .flex-box-3{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.3fr 0.1fr 1fr 0.2fr 5fr 0.8fr;
+        grid-template-areas: 
+        ". .   .   .   .   .   .   .   ."
+        ". thr thr thr thr thr thr thr ."
+        ". .   hb   hb  hb  hb  hb   .   ."
+        ". .   vk  vk  vk  vk  vk  .   ."
+        ". glr glr glr glr glr glr glr ."
+        ". .   .   .   .   .   .   .   .";
+        row-gap: 2%;
+        justify-items: center;
+    }
     .third-section{
         overflow-y: auto;
         overflow-x: hidden;
     }
     .main_h2-style {
         font-size: large;
+        align-self: center;  
+
     }
     .second-lorem-style{
-        font-size: small;
+        font-size: 0.6em;
+        white-space:pre-line;
     }
     .gallery{
         display: grid;
@@ -695,23 +738,57 @@ footer{
         justify-content: center;
     }
     /* --------------subscribe-section--------------- */
-
-.lorem-txt-subscribe{
+    
+    .flex-box-5{
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr 0.25fr 0.5fr 1fr 0.5fr;
+    }
+    .background-image{
+        z-index: 0;
+        background-image: url(../img/subs_background.jpg);
+        background-size: cover;
+        filter: brightness(50%);
+        background-repeat: no-repeat;
+        grid-column: 1/1;
+        grid-row: 1/10;
+        width: 100%;
+        justify-self: start;
+}
+    .main-h2{
+        z-index: 2;
+        grid-column: 1/1;
+        grid-row: 3/4;
+        align-self: center;
+        color: white;
+        font-size: 165%;
+        line-height: 100%;
+        font-weight: bolder;
+        letter-spacing: 0.05em;
+}
+    .lorem-txt-subscribe{
     z-index: 2;
     width: 60%;
     color: white;
-    grid-column: 4/5;
+    grid-column: 1/1;
     grid-row: 4/5;
     align-self: center;
+    justify-self: center;
+    white-space: normal;
 }
 .subscribe-form{
     z-index: 2;
-    grid-column: 3/6;
+    grid-column: 1/1;
     grid-row: 5/6;
     display: flex;
     gap: 10%;
+    width: 80%;
     height: 70%;
     align-self: center;
+    justify-self: center;
     flex-direction: column;
     align-items: center;
 }
@@ -720,6 +797,12 @@ footer{
     height: 100px;
     border-radius: 4px;
 }
+.subscribe-button {
+    width: 30%;
+} 
+.subscribe-button a{
+    font-size: small;
+}  
 
 /* send-message-last-block */
 
@@ -730,6 +813,7 @@ footer{
     grid-template-columns: 0.3fr 0.4fr 0.4fr 0.4fr 0.4fr 0.3fr 0.4fr 0.4fr 0.4fr 0.4fr;
     grid-template-rows: 0.25fr 0.5fr 0.15fr 0.05fr 0.2fr 0.1fr 1fr 0.2fr 0.25fr 0.25fr;
     transition: 0.5s;
+    row-gap: 2%;
 }
 .main-txt-last{
     grid-column: 2/4;
@@ -797,13 +881,14 @@ footer{
 }
 .contact{
     color: white;
+    font-size: 1em;
 }
 .contacts-info{
     width: 80%;
     color: white;
     line-height: 190%;
     font-weight: bolder;
-    font-size: smaller;
+    font-size: 0.7em;
 }
 .copyright{
     width: 100%;
@@ -812,6 +897,8 @@ footer{
     grid-row: 10/11;
     color: white;
     align-self: center;
+    font-size: 0.5em;
+    white-space: nowrap;
 }
 .social-ico-box{
     z-index: 10;
@@ -827,4 +914,14 @@ footer{
     flex-direction: row;
     justify-self: end;
 }
+/* buttons */
+    .send-message-button a{
+        font-size: small;
+} 
+.learn-more-button{
+    width: 50%;
+    height: 80%;
 }
+ 
+}
+

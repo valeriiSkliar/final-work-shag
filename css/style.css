@@ -28,6 +28,7 @@
     padding: 26px 20px 20px 20px;
     background-color: #312b2c;
     transition: 0.25s;
+    white-space: nowrap;
 }
 .h1_text{
     font-size: 350%;
