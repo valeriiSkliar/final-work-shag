@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: 'Palanquin', sans-serif;
+    scrollbar-width: thin;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #f8f2ef;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #312b2c6e;
+    border-radius: 20px;
+    border: 3px solid #f8f2ef;
+}
+.first-section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.second-section {
+    width: 100%;
+    height: 100vh;
+}
+/*  */
+.fourth-section{
+    width: 100%;
+    height: 100vh;
+}
+.subscribe-section {
+    width: 100%;
+    height: 100vh;
+}
+.last-section{
+    width: 100%;
+    height: 100vh;
+}
+.text-style-description{
+    width: 100%;
+    line-height: 120%;
+    font-size: 0.7em;
+}
+.discription-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #d60f0f;
+    border: 1px solid #810c0ccb;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.25s;
+}
+.contact-us-button{
+    width: 50%;
+}
+.learn-more-button{
+    align-self: flex-end;
+    width: 50%;
+    height: 70%;
+    grid-column: 2;
+    grid-row: 6/8;
+}
+.subscribe-button{
+    width: 25%;
+    height: 100%;
+}
+.send-message-button{
+    width: 100%;
+    height: 70%;
+}
+.vkladki{
+    grid-area: vk;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
