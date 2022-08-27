@@ -1037,7 +1037,7 @@ footer{
 
 /* orientation-landscape */
 
-@media screen and (orientation: landscape) and (max-width:865px) {
+@media screen and (orientation: landscape) and (max-width:915px) {
 
     /* first-section */
 
@@ -1200,8 +1200,13 @@ footer{
         grid-gap: 0.5em 0.5em;
     }
 
+    .h2_txt{
+        font-size: 1.2em;
+    }
+
     .lorem-position {
-        grid-area: 3 / 2 / 4 / 5;
+        font-size: 0.6em;
+        grid-area: 3 / 2 / 4 / 4;
         justify-self: start;
         text-align: justify;
         width: 100%;
@@ -1215,15 +1220,17 @@ footer{
     }
 
     .name-position {
-        grid-area: 3 / 5 / 3 / 7;
-        justify-self: start;
+        font-size: 0.9em;
+        grid-area: 3 / 5 / 3 / 5;
+        justify-self: center;
         align-self: center;
     }
 
     .name-discription-position {
+        font-size: 0.6em;
         justify-self: start;
-        align-self: flex-end;
-        grid-area: 3 / 5 / 3 / 8;
+        align-self: end;
+        grid-area: 3 / 6 / 3 / 8;
     }
 
     .socLinks-position {
