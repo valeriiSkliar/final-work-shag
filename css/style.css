@@ -71,63 +71,7 @@
     font-weight: 100;
   }
 /* ----------------------- */
-.third-section{
-    width: 100%;
-    height: 100vh;
-}
-.flex-box-3{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.3fr 0.1fr 1fr 0.2fr 5fr 0.8fr;
-    grid-template-areas: 
-    ". .   .   .   .   .   .   .   ."
-    ". thr thr thr thr thr thr thr ."
-    ". .   .   hb  hb  hb  .   .   ."
-    ". .   vk  vk  vk  vk  vk  .   ."
-    ". glr glr glr glr glr glr glr ."
-    ". .   .   .   .   .   .   .   .";
-    row-gap: 2%;
-    justify-items: center;
-}
-.top-line{
-    text-align: end;
-    grid-area: thr;
-    width: 90%;
-    height: 1%;
-    border:0.5px solid rgba(49, 43, 44, 0.062)
-}
-.head-block{
-    height: 25%;
-    grid-area: hb;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 15px;
-    text-align: center;
-}
-.gallery{
-    grid-area: glr;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
-    row-gap: 2%;
-    column-gap: 1%;
-}
-.pic{
-    width: 100%;
-    height: 100%;
-    filter: grayscale(80%);
-    transition: 0.25s;
-}
-img{
-    width: 100%;
-    height: 100%;
-}
+
 
 
 

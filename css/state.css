@@ -70,3 +70,12 @@
 .input-style:active {
     background-color: hsl(0deg, 10%, 90%);
 }
+
+@keyframes fotoSlick {
+    0%{
+        perspective: 600px;
+    }
+    100%{
+        opacity: 0;
+    }
+}
