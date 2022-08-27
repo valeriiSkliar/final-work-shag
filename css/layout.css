@@ -1037,15 +1037,25 @@ footer{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
     grid-template-rows: 0.3fr 0.5fr 1fr 0.8fr;
     grid-template-areas:
-        ". thr thr thr thr thr thr htr ."
-        ". hb hb hb . vk vk vk ."
-        ". glr glr glr glr glr glr glr ."
-        ". . . . . . . . .";
+        ". thr thr ."
+        ". hb vk ."
+        ". glr glr ."
+        ". . . .";
     row-gap: 1%;
     justify-items: center;
+    }
+
+    .vkladki {
+        width: fit-content;
+        font-size: 0.75em;
+        gap: 5%;
+        justify-self: start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
     .top-line{
@@ -1076,7 +1086,8 @@ footer{
         grid-template-columns:
         0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
         grid-template-rows:
-        0.1fr 0.25fr 0.5fr 0.1fr 1fr 0.1fr;
+        0.1fr 0.2fr 0.3fr 0.2fr 1fr 0.1fr;
+        grid-gap: 0.5em 0.5em;
     }
 
     .lorem-position {
@@ -1086,6 +1097,13 @@ footer{
         width: 100%;
     }
 
+    .bottom-line {
+        width: 30%;
+        grid-column: 4/4;
+        grid-row: 3/3;
+        align-self: center;
+    }
+
     .name-position {
         grid-area: 2 / 6 / 2 / 7;
         justify-self: start;
@@ -1093,11 +1111,14 @@ footer{
     }
 
     .name-discription-position {
+        justify-self: start;
+        align-self: flex-start;
         grid-area: 3 / 6 / 3 / 8;
     }
 
     .socLinks-position {
         grid-area: 4 / 5 / 4 / 8;
+        justify-self: end;
     }
 
     .main-foto {
@@ -1121,6 +1142,19 @@ footer{
     }
 
     /* subscribe-section */
+
+    .flex-box-last {
+        grid-template-columns:
+        0.3fr 0.4fr 0.4fr 0.4fr 0.4fr 0.3fr 0.4fr 0.4fr 0.4fr 0.4fr;
+        grid-template-rows:
+        0.25fr 0.5fr 0.15fr 0.05fr 0.3fr 0.05fr 1fr 0.1fr 0.1fr 0.25fr;
+        transition: 0.5s;
+    }
+
+    .bottom-line-last {
+        grid-area: 3 / 2 / 4 / 5;
+        justify-self: start;
+    }
 
     .subscribe-form {
         width: 65%;
@@ -1154,5 +1188,25 @@ footer{
 
     .contact-box {
         grid-area: 5 / 7 / 9 / 11;
+    }
+    
+    .social-ico-1 {
+        background-size: 70%;
+        background-position: center;
+    }
+
+    .social-ico-2 {
+        background-size: 70%;
+        background-position: center;
+    }
+
+    .social-ico-3 {
+        background-size: 70%;
+        background-position: center;
+    }
+    
+    .social-ico-4 {
+        background-size: 70%;
+        background-position: center;
     }
 } 
