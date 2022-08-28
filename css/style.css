@@ -1,25 +1,47 @@
 /*  */
-.akeconsa-udaneles{
+.arrow_up{
     position: fixed;
-    bottom: 28px;
-    right: 28px;
+    bottom: 40px;
+    right: 15px;
     z-index: 9;
   }
-  .akeconsa-udaneles a {
-    height: 42px;
-    width: 42px;
+  .arrow_up a {
+    height: 30px;
+    width: 30px;
     text-align: center;
-    background: #151414;
+    background: #151414bd;
     display: block;
     border-radius: 2px;
+    text-decoration: none;
+    font-size: 1em;
   }
-  .akeconsa-udaneles a span {
-    color: #f7f0f0;
-    font-size: 30px;
-    line-height: 42px;
-    cursor: pointer;
+  .arrow-up-link {
+    text-decoration: none;
+    color: #fff;
   }
+  .arrow_down {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    z-index: 9;
+  }
+  .arrow-down-link {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background: #151414bd;
+    color: #fff;
+    display: block;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+
 /*  ------------------------------  */
+
 .header_button{
     font-size: 12px;
     color: white;

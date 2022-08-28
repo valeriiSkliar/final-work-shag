@@ -12,21 +12,21 @@
     line-height: 100%;
     font-weight: bolder;
     letter-spacing: 0.01em;
-    color: hsl(0deg 0% 50%);
+    color: hsl(0, 0%, 36%);
 }
 .main-lorem-style{
     font-size: 75%;
     line-height: 120%;
     font-weight: lighter;
     letter-spacing: 0.08em;
-    color: hsl(0deg 0% 36%);
+    color: hsl(0, 0%, 36%);
 }
 .second-lorem-style{
     font-size: 75%;
     line-height: 120%;
     font-weight: lighter;
     letter-spacing: 0.08em;
-    color: hsl(0deg 0% 60%);
+    color: hsl(0deg 0% 36%);
 }
 .main-ico-style{
     background-repeat: no-repeat;

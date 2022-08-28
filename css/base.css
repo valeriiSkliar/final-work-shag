@@ -10,6 +10,10 @@ html,body{
     font-family: 'Palanquin', sans-serif;
     scrollbar-width: thin;
 }
+::selection {
+    color: #e05353;
+    background-color: #808080bb;
+}
 body::-webkit-scrollbar{
     width: 8px;
 }
@@ -89,3 +93,21 @@ body::-webkit-scrollbar-thumb{
 .link_vkladki,.header_button {
     text-decoration: none;
 }
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 11.2px;
+    height: 11.2px;
+    border-radius: 11.2px;
+    box-shadow: 28px 0px 0 0 rgba(153,153,153,0.2), 22.7px 16.5px 0 0 rgba(153,153,153,0.4), 8.68px 26.6px 0 0 rgba(153,153,153,0.6), -8.68px 26.6px 0 0 rgba(153,153,153,0.8), -22.7px 16.5px 0 0 #999999;
+    animation: spinner 5s forwards linear;
+ }
+ @keyframes spinner {
+    99% {
+        transform: rotate(360deg);
+    }
+    100% {
+        opacity: 0;
+    }
+ }
