@@ -43,6 +43,11 @@
     transform: rotateX(0deg);
     bottom: 0%;
 }
+
+.main-ico-style:hover {
+    animation: icoShace .5s forwards linear;
+}
+
 .link_vkladki:link {
     color: hsl(0deg 0% 50%);
 }
@@ -71,11 +76,27 @@
     background-color: hsl(0deg, 10%, 90%);
 }
 
+#burger,[for=burger] {
+    display: none;
+}
+
 @keyframes fotoSlick {
     0%{
         perspective: 600px;
     }
     100%{
         opacity: 0;
+    }
+}
+
+@keyframes icoShace {
+    25% {
+        transform: translate(4px);
+    }
+    50% {
+        transform: translate(-4px);
+    }
+    75% {
+        transform: translate(4px);
     }
 }

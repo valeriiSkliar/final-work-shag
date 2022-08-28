@@ -288,6 +288,11 @@ img{
     width: 60%;
     font-size: 0.8em;
 }
+.lorem_txt-gallery {
+	grid-area: 3 / 2 / 3 / 6;
+    width: 90%;
+    font-size: 0.8em;
+}
 
 .h2_txt {
 	grid-area: 2 / 2 / 2 / 2;
@@ -610,7 +615,7 @@ footer{
         grid-template-rows: 0.2fr 0.05fr 0.5fr 1fr ;
         justify-content: center;
         row-gap: 2%;
-        
+        z-index: 10;
     }
     
     .header_box{
@@ -1048,7 +1053,7 @@ footer{
 
 /* orientation-landscape */
 
-@media screen and (orientation: landscape) and (max-width:915px) {
+@media screen and (orientation: landscape) and (max-width:865px) {
 
     /* buttons */
     .contact-us-button{
@@ -1356,3 +1361,47 @@ footer{
         background-position: center;
     }
 } 
+
+@media screen and (max-width: 500px) {
+    [for=burger] {
+        display: block;
+        position: fixed;
+        color: gray;
+        font-size: 2em;
+        width: 30px;
+        left: 15px;
+        top: 5px;
+        z-index: 1000;
+    }
+    [for=burger]::before {
+        content: '☰';
+    }
+
+    .header_button {
+        display: none;
+    }
+    #burger:checked + label + .bugger_box .burger_button {
+        z-index: 999;
+        display: block;
+        width: 80%;
+        float: left;
+        border: 1px solid black;
+        transform: translateY(70px);
+    }
+    #burger:checked + [for=burger]::before {
+        content: '✖';
+        transform: rotateZ(-90deg);
+    }
+
+    #burger:checked + label + .bugger_box {
+        background-color: transparent;
+        border: 0px;
+        position: fixed;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-self: flex-start;
+        user-select: none;
+    }
+}
