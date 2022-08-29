@@ -4,33 +4,33 @@
     width: 100%;
     height: 100%;
 	display: grid;
-	grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
-	grid-template-rows: 0.2fr 0.1fr 0.3fr 0.1fr 1fr 0.2fr;
+	grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+	grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 1fr 0.1fr;
 	grid-gap: 0.5em 0.5em;
 }
 .h2-position {
     grid-area: 2 / 2 / 3 / 3;
 }
 .lorem-position {
-    grid-area: 3 / 2 / 4 / 3;
+    grid-area: 3 / 2 / 4 / 5;
 }
 .line-position {
     grid-area: 4 / 2 / 4 / 3;
 }
 .name-position {
-    grid-area: 4 / 4 / 5 / 5;
+    grid-area: 4 / 2 / 5 / 3;
 }
 .name-discription-position {
-    justify-self: end;
-    width: 90%;
-    grid-area: 3 / 3 / 4 / 5;
+    justify-self: start;
+    width: 100%;
+    grid-area: 4 / 3 / 5 / 5;
 }
 .socLinks-position {
-    grid-area: 6 / 3 / 7 / 4;
+    grid-area: 6 / 2 / 7 / 5;
+    justify-self: center;
 }
 .wrapper1 {
-    margin: 0 auto;
-    position: none;
+    justify-self: center;
     width: 100%;
     height: 80%;
     grid-area: 5 / 2 / 8 / 5;
@@ -54,11 +54,11 @@
 }
 
 .slides {
-	height: 100%;
+	height: 90%;
 	opacity: 0;
 	position: absolute;
-    left: 25%;
-	width: 50%;
+    top: 5%;
+	width: 100%;
 	z-index: 0;
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
@@ -72,7 +72,7 @@
 
 .slide1 { 
     background-image: url(../img/team/3.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center; 
 }

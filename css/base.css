@@ -15,8 +15,8 @@ body {
 }
 .wrapper {
     height: 100vh;
-    /* overflow: hidden; */
-    /* animation: load-screen 5s forwards linear; */
+    overflow: hidden;
+    animation: load-screen 5s forwards linear;
 }
 /* scroll-button */
 .arrow_up{
