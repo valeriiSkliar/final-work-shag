@@ -80,14 +80,19 @@
     display: none;
 }
 
-@keyframes fotoSlick {
-    0%{
-        perspective: 600px;
-    }
-    100%{
+@keyframes load-screen {
+    0% {
         opacity: 0;
     }
+    99% {
+        opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      overflow: visible;
 }
+}
+
 
 @keyframes icoShace {
     25% {

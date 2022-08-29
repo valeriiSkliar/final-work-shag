@@ -1,10 +1,18 @@
+:root {
+        --main-color-header: #312b2c;
+        --main-color-contact_box-footer:hsl(0deg 0% 10%);
+        --main-color-h2-h3: hsl(0deg 0% 36%);
+        --main-color-span2: ;
+        --main-color-span1: hsl(0deg 0% 36%);
+        --main-color-span2:hsl(0deg 0% 60%) ;
+}
 .main_h2-style{
     font-size: 190%;
     line-height: 100%;
     font-weight: bolder;
     white-space: nowrap;
     letter-spacing: 0.2em;
-    color: hsl(0deg 0% 36%);
+    color: var(--main-color-h2-h3);
     -webkit-text-stroke: 1px rgba(70, 63, 63, 0.712);
 }
 .main-h3-style{
@@ -12,21 +20,21 @@
     line-height: 100%;
     font-weight: bolder;
     letter-spacing: 0.01em;
-    color: hsl(0, 0%, 36%);
+    color: var(--main-color-h2-h3);
 }
 .main-lorem-style{
     font-size: 75%;
     line-height: 120%;
     font-weight: lighter;
     letter-spacing: 0.08em;
-    color: hsl(0, 0%, 36%);
+    color: var(--main-color-span1);
 }
 .second-lorem-style{
     font-size: 75%;
     line-height: 120%;
     font-weight: lighter;
     letter-spacing: 0.08em;
-    color: hsl(0deg 0% 36%);
+    color: var(--main-color-span2);
 }
 .main-ico-style{
     background-repeat: no-repeat;
