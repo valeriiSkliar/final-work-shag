@@ -1170,6 +1170,7 @@ footer{
     /* third-section-gallery */
 
     .flex-box-3{
+        z-index: 5;
         width: 100%;
         height: 100%;
         display: grid;
@@ -1208,6 +1209,7 @@ footer{
      }
 
     .gallery {
+        z-index: 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -1363,19 +1365,80 @@ footer{
 } 
 
 @media screen and (max-width: 500px) {
+
+    .flex-box-1{
+        grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-rows: 0.4fr 0.25fr 1fr 0.25fr; 
+    }
+
+    .header_box{
+        z-index: 999;
+       display: block;
+       position: fixed;
+       top: 0;
+       left: 0;
+       height: 70px;
+    }
+
+    .header_button {
+        display: none;
+    }
+
     [for=burger] {
         display: block;
         position: fixed;
-        color: gray;
-        font-size: 2em;
-        width: 30px;
-        left: 15px;
         top: 5px;
         z-index: 1000;
     }
-    [for=burger]::before {
-        content: '☰';
+
+    .burger-line {
+        z-index: 1000;
+        background-color: white;
+        display: block;
+        height: 1px;
+        position: fixed;
+        left: 25px;
+        top: 30px;
+        width: 24px;
+        padding: 2px 0px;
     }
+
+    .burger-line::after, .burger-line::before {
+        z-index: 1000;
+        content: '';
+        background: white;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .burger-line::after {
+        top: 8px;
+    }
+
+    .burger-line::before {
+        top: -8px;
+    }
+
+
+    .video_box{
+        width: 100%;
+        grid-area: 2 / 2 / 3 / 4;
+        justify-self: center;
+    }
+    .play-button{
+        width: 100%;
+        grid-area: 2 / 2 / 3 / 4;
+        justify-self: center;
+        align-self: center;
+        justify-self: center;
+        width: 10%;
+        height: 18%;
+        border: 0px;
+        box-shadow: none;
+    }
+    
 
     .header_button {
         display: none;
@@ -1388,20 +1451,16 @@ footer{
         border: 1px solid black;
         transform: translateY(70px);
     }
-    #burger:checked + [for=burger]::before {
-        content: '✖';
-        transform: rotateZ(-90deg);
-    }
 
-    #burger:checked + label + .bugger_box {
-        background-color: transparent;
+    /* #burger:checked + label + .bugger_box {
         border: 0px;
-        position: fixed;
+        position: absolute;
+        background-color: #312b2c;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: flex-start;
         align-self: flex-start;
         user-select: none;
-    }
+    } */
 }

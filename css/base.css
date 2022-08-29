@@ -10,6 +10,10 @@ html,body{
     font-family: 'Palanquin', sans-serif;
     scrollbar-width: thin;
 }
+body {
+    cursor: url(../img/cursor.png), default;
+
+}
 ::selection {
     color: #e05353;
     background-color: #808080bb;
