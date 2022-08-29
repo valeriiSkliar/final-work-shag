@@ -30,7 +30,11 @@
     justify-self: center;
 }
 .wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-self: center;
+    align-self: center;
     width: 100%;
     height: 80%;
     grid-area: 5 / 2 / 8 / 5;
@@ -43,6 +47,9 @@
 
 
 .slider {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 	height: inherit;
 	overflow: hidden;
 	position: relative;
@@ -69,10 +76,15 @@
 	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
-
+.controls {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 10%;
+}
 .slide1 { 
     background-image: url(../img/team/3.jpg);
-    background-size: 100% 100%;
+    background-size: 80% 100%;
     background-repeat: no-repeat;
     background-position: center; 
 }
@@ -119,9 +131,6 @@
 }
 
 .wrapper1 .controls {
-	left: 50%;
-	margin-left: -98px;
-	position: absolute;
 }
 
 .wrapper1 label {
