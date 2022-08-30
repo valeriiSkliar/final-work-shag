@@ -34,7 +34,6 @@
      width: 100%;
      color: rgb(43, 43, 43);
      background-color: rgba(240, 248, 255, 0.377);
-     /* transform: translateY(25%); */
      transform: rotateX(-90deg) scaleX(0.9);
      transition: 0.25s;
 }

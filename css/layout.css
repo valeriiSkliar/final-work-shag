@@ -244,130 +244,17 @@
     row-gap: 2%;
     column-gap: 1%;
 }
-.pic{
+/* .pic{
     width: 100%;
     height: 100%;
     filter: grayscale(80%);
     transition: 0.25s;
-}
+} */
 img{
     width: 100%;
     height: 100%;
 }
 
-/* ---------MEET OUR TEAM------------ */
-
-
-.flex-box-4 {
-    width: 100%;
-    height: 100%;
-	display: grid;
-	grid-template-columns: 0.7fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr;
-	grid-template-rows: 0.5fr 0.5fr 0.5fr 0.3fr 0.2fr 0.3fr 0.5fr 2fr 0.2fr;
-	grid-gap: 0.5em 0.5em;
-}
-.wrapper1 {
-    grid-area: 4 / 1 / 9 / 12;
-    height: 95%;
-    align-self: flex-end;
-}
-.slider {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: minmax(20px, 50px) minmax(310px, 1.2fr) minmax(10px,0.05fr) 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.3fr;
-    grid-template-rows: 0.35fr 0.5fr;
-    grid-gap: 0.5em 0.5em;
-}
-label,.controls,#slide1,#slide2,#slide3,#slide4,#slide5 {
-    display: none;
-}
-
- .team-foto-4 {
-	grid-area: 2 / 10 / 3 / 12;
-    background-image: url(../img/team/1.jpg);
-    background-size: cover;
-    background-position-x: center;
-    transition: 0.25s;
-}
-
-.team-foto-3 {
-	grid-area: 2 / 8 / 3 / 10;
-    background-image: url(../img/team/6.jpg);
-    background-size: cover;
-    background-position-x: center;
-    transition: 0.25s;
-}
-
-.team-foto-2 {
-	grid-area: 2 / 6 / 3 / 8;
-    background-image: url(../img/team/5.jpg);
-    background-size: cover;
-    background-position-x: center;
-    transition: 0.25s;
-}
-
-.team-foto-1 {
-	grid-area: 2 / 4 / 3 / 6;
-    background-image: url(../img/team/2.jpg);
-    background-size: cover;
-    background-position-x: center;
-    transition: 0.25s;
-} 
-
-.social {
-	grid-area: 6 / 3 / 7 / 9;
-    align-self: start;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10%;
-}
-
-.lorem_txt-team {
-	grid-area: 5 / 3 / 6 / 10;
-    font-size: 0.8em;
-    justify-self: start;
-}
-
-.name {
-	grid-area: 4 / 3 / 4 / 5;
-    align-self: start;
-    margin-top: 1%;
-}
-
-.main-foto {
-	grid-area: 1 / 2 / 3 / 3;
-    height: 99%;
-    width: 100%;
-    align-self: end;
-    background-image: url(../img/team/3.jpg);
-    background-size: cover;
-    background-position-x: left;
-}
-
-.bottom-line-1 {
-	grid-area: 4 / 2 / 4 / 3;
-    align-self: flex-start;
-    border: 0.25px solid red;
-    width: 100px;
-}
-
-.lorem_txt {
-	grid-area: 3 / 2 / 3 / 8;
-    width: 60%;
-    font-size: 0.8em;
-}
-.lorem_txt-gallery {
-	grid-area: 3 / 2 / 3 / 6;
-    width: 90%;
-    font-size: 0.8em;
-}
-
-.h2_txt {
-	grid-area: 2 / 2 / 2 / 2;
-    align-self: center;
-}
 
 /* --------------subscribe-section--------------- */
 
@@ -664,25 +551,6 @@ footer{
             grid-area: 9 / 6 / 10 / 9;
             font-size: 0.6em; 
         }
-
-        /* meat-our-team */
-        .wrapper1 {
-            grid-area: 5 / 1 / 9 / 12;
-        }
-        .slider {
-            width: 100%;
-            height: 100%;
-            display: grid;
-            grid-template-columns: minmax(20px,50px) minmax(280px, 1fr) 10px 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.3fr;
-            grid-template-rows: 0.3fr 0.5fr;
-        }
-        label,.controls,#slide1,#slide2,#slide3,#slide4,#slide5 {
-            display: none;
-        }
-        .main-foto {
-            grid-area: 1 / 2 / 3 / 2 ;
-        }
-        /* ------------- */
 }
 
 @media (max-width:865px) and (min-width:300px), not (orientation:landscape) {
@@ -897,124 +765,6 @@ footer{
         gap: 2%;
     }
 
-    /* meat-our-team */
-
-    /* .flex-box-4{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 0.15fr 1fr 1fr 0.15fr;
-    grid-template-rows: 0.2fr 0.25fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
-    grid-gap: 1em 0em;
-    }
-    .h2-position {
-        grid-area: 2 / 2 / 3 / 5;
-        justify-self: start;
-        align-self: center;
-    }
-    
-    .lorem-position {
-        grid-area: 3 / 2 / 4 / 4;
-        justify-self: start;
-        text-align: justify;
-    }
-    
-    .line-position {
-        grid-area: 4 / 2 / 5 / 5;
-        justify-self: start;
-        align-self: flex-start;
-    }
-
-    .wrapper1 {
-        grid-area: 5 / 2 / 8 / 4;
-        width: 100%;
-        height: 100%;
-    }
-    label,.controls,#slide1,#slide2,#slide3,#slide4,#slide5 {
-        display: none;
-    }
-    .slider {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
-        z-index: 500;
-        overflow: hidden;
-    }
-    .main-foto {
-        z-index: 500;
-        width: 80%;
-        height: 100%;
-        justify-self: center;
-        grid-area: 2 / 2 / 4 / 4;
-    }
-    .main-foto:hover {
-        width: 100%;
-        transform: perspective(600px) scale(1.3);
-    }
-    .team-gallery-1 {
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-        grid-area: 1 / 1 / 3 / 3;
-    }
-    .team-gallery-1:hover {
-        z-index: 500;
-        width: 100%;
-        transform: perspective(600px) scale(1.3) translate(30%,30%);
-    }
-    .team-gallery-2 {
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-        grid-area: 3 / 1 / 5 / 3;
-    }
-    .team-gallery-2:hover {
-        z-index: 500;
-        width: 100%;
-        transform: perspective(600px) scale(1.3) translate(30%,-30%);
-    }
-    .team-gallery-3 {
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-        grid-area: 1 / 3 / 3 / 5;
-    }
-    .team-gallery-3:hover {
-        z-index: 500;
-        width: 100%;
-        transform: perspective(600px) scale(1.3) translate(-30%,30%);
-    }
-    .team-gallery-4 {
-        width: 100%;
-        height: 100%;
-        justify-self: center;
-        grid-area: 3 / 3 / 5 / 5;
-    }
-    .team-gallery-4:hover {
-        z-index: 500;
-        width: 100%;
-        transform: perspective(600px) scale(1.3) translate(-30%,-30%);
-    }
-    .name-position {
-        grid-area: 4 / 2 / 4 / 3;
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .name-discription-position {
-        text-align: justify;
-        grid-area: 4 / 3 / 4 / 4;
-        align-self: center;
-    }
-    
-    
-    .socLinks-position {
-        grid-area: 8 / 2 / 9 / 4;
-        justify-self: center;
-        justify-content: center;
-    } */
     /* --------------subscribe-section--------------- */
     
     .flex-box-5{
@@ -1361,75 +1111,6 @@ footer{
         grid-gap: 0em 0em;
     }
 
-    .pic {
-        width: 95%;
-        height: 95%;
-        align-self: center;
-        justify-self: center;
-    }
-
-    /* fourth-section-meat-our-team */
-
-    /* .flex-box-4 {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns:
-        0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
-        grid-template-rows:
-        0.1fr 0.2fr 0.3fr 0.1fr 1fr 0.1fr;
-        grid-gap: 0.5em 0.5em;
-    }
-
-    .h2_txt{
-        font-size: 1.2em;
-    }
-
-    .lorem-position {
-        font-size: 0.6em;
-        grid-area: 3 / 2 / 4 / 4;
-        justify-self: start;
-        text-align: justify;
-        width: 100%;
-    }
-
-    .bottom-line {
-        width: 30%;
-        grid-column: 4/4;
-        grid-row: 3/3;
-        align-self: center;
-    }
-
-    .name-position {
-        font-size: 0.9em;
-        grid-area: 3 / 5 / 3 / 5;
-        justify-self: center;
-        align-self: flex-end;
-    }
-
-    .name-discription-position {
-        font-size: 0.6em;
-        justify-self: start;
-        align-self: end;
-        grid-area: 3 / 6 / 3 / 8;
-    }
-
-    .socLinks-position {
-        grid-area: 4 / 5 / 4 / 8;
-        justify-self: end;
-    }
-
-    .wrapper1 {
-        grid-area: 5 / 2 / 6 / 8;
-    }
-    .slider {
-        width: 100%;
-        height: 100%;
-        display: grid;
-    }
-    label,.controls,#slide1,#slide2,#slide3,#slide4,#slide5 {
-        display: none;
-    } */
 
     /* subscribe-section */
 

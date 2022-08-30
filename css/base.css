@@ -15,16 +15,15 @@ body {
 }
 .wrapper {
     height: 100vh;
-    overflow: hidden;
-    animation: load-screen 5s forwards linear;
+    /* overflow: hidden;
+    animation: load-screen 5s forwards linear; */
 }
 /* scroll-button */
 .arrow_up{
     position: fixed;
-    bottom: 40px;
-    right: 15px;
+    top: 40px;
+    left: 15px;
     z-index: 9;
-    animation: load-screen 5s forwards linear;
   }
   .arrow_up a {
     height: 30px;
@@ -43,7 +42,7 @@ body {
   .arrow_down {
     position: fixed;
     top: 20px;
-    right: 15px;
+    left: 15px;
     z-index: 1000;
   }
   .arrow-down-link {
