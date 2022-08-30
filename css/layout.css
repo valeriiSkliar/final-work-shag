@@ -237,7 +237,7 @@
 }
 .gallery{
     grid-area: glr;
-    width: 100%;
+    width: 70%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -782,7 +782,7 @@ footer{
     }
     .main_h2-position {
         font-size: 1em;
-        align-self: flex-start;  
+        align-self: center;  
 
     }
     .second-lorem-style{
@@ -792,10 +792,11 @@ footer{
         justify-items: baseline;
     }
     .gallery{
+        width: 100%;
         display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-gap: 1em 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1% 2%;
     }
     .vkladki{
         font-size: 0.7em;
@@ -1141,11 +1142,13 @@ footer{
      }
 
     .gallery {
+        width: 100%;
+        height: 150%;
         z-index: 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-gap: 0em 0em;
+        grid-gap: 2% 1%;
     }
 
 
@@ -1329,8 +1332,8 @@ footer{
   }
   .line-position {
     width: 50%;
-    grid-area: 3 / 2 / 4 / 3;
-    align-self: flex-start;
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: center;
     border: 0.5px red solid;
   }
 
@@ -1572,4 +1575,27 @@ footer{
         grid-area: 5 / 5 / 6 / 8;
     }
     
+}
+@media (orientation:landscape) {
+    .line-position {
+        width: 50%;
+        grid-area: 2 / 2 / 3 / 3;
+        align-self: flex-end;
+        border: 0.5px red solid;
+    }
+
+    .main-txt-last {
+        align-self: center;
+        font-size: medium;
+    }
+    .lorem-txt-last {
+        font-size: 0.6em;
+    }
+    .bottom-line-last{
+        align-self: center;
+    }
+    .gallery{
+        height: 120%;
+        width: 70%;
+    }
 }
