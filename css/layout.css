@@ -1307,6 +1307,7 @@ footer{
   }
 
 .slides {
+    z-index: 0;
     justify-self: center;
     width: 80%;
     opacity: 0;
@@ -1363,7 +1364,7 @@ footer{
 .flex-box-4 #slide4:checked ~ .slide4,
 .flex-box-4 #slide5:checked ~ .slide5{
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -1400,10 +1401,10 @@ footer{
     } 
 
 .main-foto {
-    align-self: end;
     background-image: url(../img/team/3.jpg);
     background-size: cover;
     background-position-x: left;
+    transition: 0.25s;
     }
 
 .socLinks-position {
@@ -1415,6 +1416,10 @@ footer{
     }
 
 @media screen and (min-width:500px) {
+    .flex-box-4 {
+        grid-template-columns: 0.2fr 0.25fr 0.5fr 0.5fr 0.25fr 0.2fr;
+        grid-template-rows: 0.2fr 0.3fr 0.25fr 1fr 0.1fr 0.2fr ;
+      }
     .slides {
         grid-area: 4 / 2 / 5 / 6;
         background-position: center;
@@ -1483,32 +1488,25 @@ footer{
       }
       .team-foto-4 {
         background-image: url(../img/team/1.jpg);
-        background-size: cover;
-        background-position-x: center;
+
         transition: 0.25s;
         grid-area: 6 / 8 / 7 / 9;
     }
     
     .team-foto-3 {
         background-image: url(../img/team/6.jpg);
-        background-size: cover;
-        background-position-x: center;
         transition: 0.25s;
         grid-area: 6 / 7 / 7 / 8;
     }
     
     .team-foto-2 {
         background-image: url(../img/team/5.jpg);
-        background-size: cover;
-        background-position-x: center;
         transition: 0.25s;
         grid-area: 6 / 6 / 7 / 7;
     }
     
     .team-foto-1 {
         background-image: url(../img/team/2.jpg);
-        background-size: cover;
-        background-position-x: center;
         transition: 0.25s;
         grid-area: 6 / 5 / 7 / 6;
     } 
@@ -1517,8 +1515,6 @@ footer{
         grid-area: 4 / 2 / 7 / 4;
         align-self: end;
         background-image: url(../img/team/3.jpg);
-        background-size: cover;
-        background-position-x: left;
     }
     
     .socLinks-position {
