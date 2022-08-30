@@ -782,8 +782,7 @@ footer{
     }
     .main_h2-position {
         font-size: 1em;
-        align-self: center;  
-
+        justify-self: center;
     }
     .second-lorem-style{
         width: 100%;
@@ -1124,7 +1123,7 @@ footer{
         width: 90%;
     }
     .main_h2-style {
-        text-align: left;
+        justify-self: start;
     }
     .vkladki {
         width: fit-content;
