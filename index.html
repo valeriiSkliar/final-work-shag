@@ -20,7 +20,7 @@
         <a href="#" title="Arrow up page" class="arrow-up-link">/\</a>
       </div>
     <div class="wrapper">
-        <section class="first-section">
+        <main class="first-section">
             <div class="flex-box-1">
                 <input type="checkbox" name="burger-menu" id="burger">
                 <label for="burger"><span class="burger-line"></span></label>
@@ -30,24 +30,24 @@
                     <a class="header_button burger_button" href="#meat-our-team">ABOUT US</a>
                     <a class="header_button burger_button" href="#contact">CONTACT</a>
                 </header>
-                <main class="left-side">
+                <div class="left-side">
                     <h1 class="main_h1 h1_text">OUR STRONG<br> ORGANAISATION</h1>
                     <span class="main-lorem-style">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium a laboriosam numquam repudiandae aperiam accusamus, quibusdam magni, quis quisquam atque qui! Velit, nostrum. </span>
-                    <button class="contact-us-button discription-button">
+                    <div class="contact-us-button discription-button">
                         <a href="#contact" class="discription_link">Contact Us</a>
-                    </button>
-                </main>
-                <video class="video_box" src="./img/video.mp4" width="100%"></video>
+                    </div>
+                </div>
+                <video class="video_box" src="./img/video.mp4"></video>
                 <img class="video_box play-button" src="./img/video_cover.png" alt="play-button">
             </div>
-        </section>
+        </main>
         <section class="second-section">
             <div class="flex-box-2">
                 <h2 class="main_h2-style main_h2">DO YOU KNOW WE CAN<br> PROVIDE FOR YOU?</h2>
                  <span class="main-lorem-style lorem_txt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium a laboriosam numquam repudiandae aperiam accusamus, quibusdam magni, quis quisquam atque qui! Velit, nostrum. Aspernatur rem libero, culpa laborum illum molestias.</span>
-                 <button class="learn-more-button discription-button">
+                 <div class="learn-more-button discription-button">
                     <a href="#" class="discription_link">Learn More</a>
-                </button>
+                 </div>
                 <div class="main-ico-style icon1"></div>
                 <div class="main-ico-style icon2"></div>
                 <div class="main-ico-style icon3"></div>
@@ -78,9 +78,7 @@
                     <div class="vrladka-5 main-link-style"><a href="#" class="link_vkladki">MOCK-UP</a></div>
                 </div>
                 <div class="gallery">
-                    <div class="pic">
-                        <img src="./img/gallery/1.jpg" alt="">
-                    </div>
+                    <div class="pic pic1"></div>
                     <div class="pic">
                         <img src="./img/gallery/2.jpg" alt="">
                     </div>
@@ -144,9 +142,9 @@
                 <span class="second-lorem-style lorem-txt-subscribe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A est sequi dolore?</span>
                 <form class="subscribe-form" action="subscribe-form" >
                     <input class="input-subscribe input-style" name="email" placeholder="Type your email adress..." type="text">
-                    <button class="subscribe-button discription-button">
+                    <div class="subscribe-button discription-button">
                         <a href="#" class="discription_link">Subscribe</a>
-                    </button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -158,10 +156,10 @@
                 <form action="send-msg-form"></form>
                 <input type="text" class="name-input input-style" placeholder="Name">
                 <input type="text" class="mail-input input-style" placeholder="Your mail">
-                <textarea type="text" class="txt-area input-style" placeholder="Type your message"></textarea>
-                <button class="send-message-button discription-button">
+                <textarea name="textarea" class="txt-area input-style" placeholder="Type your message"></textarea>
+                <div class="send-message-button discription-button">
                     <a href="#" class="discription_link">SEND MESSAGE</a>
-                </button>
+                </div>
                 <div class="contact-box">
                     <h3 class="contact">CONTACT INFO</h3>
                     <span class="discription contacts-info">
@@ -170,7 +168,7 @@
                     +380 (48) 728-66-60
                     </span>
                 </div>
-                <span class="discription copyright">&copy Copyright @skliarovValerii 2022, All rights reserved.</span>
+                <span class="discription copyright">&copy; Copyright @skliarovValerii 2022, All rights reserved.</span>
                 <footer></footer>
                 <div id="arrow-down" class="social-ico-box">
                     <div class="social-ico-1"></div>
@@ -183,7 +181,6 @@
                 <a href="#arrow-down" title="Arrow down page" class="arrow-down-link">\/</a>
               </div>
         </section>
-    </div>
     </div>
 </body>
 </html>
