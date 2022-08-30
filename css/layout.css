@@ -743,6 +743,11 @@ footer{
         align-self: center;  
 
     }
+    .main_h2-position {
+        font-size: 1em;
+        align-self: flex-start;  
+
+    }
     .second-lorem-style{
         width: 100%;
         font-size: 0.6em;
@@ -1438,6 +1443,10 @@ footer{
         grid-area: 4 / 3 / 5 / 5;
         background-position: center;
     }
+    .name-discription-position {
+        grid-area: 3 / 3 / 4 / 5;
+        align-self: center;
+      }
 
 }
 
@@ -1446,7 +1455,7 @@ footer{
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: 0.3fr 1fr 0.5fr 0.2fr 1fr 1fr 1fr 1fr 0.3fr;
+        grid-template-columns: 0.3fr 1fr 0.5fr 0.1fr 1fr 1fr 1fr 1fr 0.3fr;
         grid-template-rows: 0.3fr 0.3fr 0.1fr 0.3fr 0.2fr 1fr 0.5fr;
         row-gap: 1%;
         column-gap: 1%;
@@ -1473,12 +1482,13 @@ footer{
       }
     
       .name-discription-position {
-        grid-area: 4 / 5 / 5 / 8;
+        grid-area: 4 / 5 / 5 / 7;
         align-self: flex-end;
       }
     
       .slides {
-        overflow: hidden;
+        height: 100%;
+        justify-self: flex-start;
         opacity: 1;
         transform: scale(1);
       }
@@ -1513,7 +1523,6 @@ footer{
     
     .main-foto {
         grid-area: 4 / 2 / 7 / 4;
-        align-self: end;
         background-image: url(../img/team/3.jpg);
     }
     
