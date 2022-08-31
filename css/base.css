@@ -17,6 +17,7 @@ body {
     height: 100vh;
     overflow: hidden;
     animation: load-screen 5s forwards linear;
+    -webkit-animation: load-screen 5s forwards linear;
 }
 /* scroll-button */
 .arrow_up{
@@ -25,7 +26,8 @@ body {
     right: 15px;
     z-index: 9;
     animation: load-screen 5s forwards linear;
-  }
+    -webkit-animation: load-screen 5s forwards linear;
+}
   .arrow_up a {
     height: 30px;
     width: 30px;
@@ -59,7 +61,11 @@ body {
     border-radius: 2px;
     text-decoration: none;
     font-size: 1em;
-  }
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
 /* ------------ */
 
 ::selection {
@@ -76,6 +82,10 @@ body::-webkit-scrollbar-thumb{
     background-color: #312b2c6e;
     border-radius: 20px;
     border: 3px solid #f8f2ef;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .first-section {
     width: 100%;
@@ -115,6 +125,14 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;
     text-align: center;
     transition: 0.25s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
 }
 .contact-us-button{
     width: 50%;
@@ -155,7 +173,11 @@ body::-webkit-scrollbar-thumb{
     border-radius: 11.2px;
     box-shadow: 28px 0px 0 0 rgba(153,153,153,0.2), 22.7px 16.5px 0 0 rgba(153,153,153,0.4), 8.68px 26.6px 0 0 rgba(153,153,153,0.6), -8.68px 26.6px 0 0 rgba(153,153,153,0.8), -22.7px 16.5px 0 0 #999999;
     animation: spinner 5s forwards linear;
- }
+    -webkit-border-radius: 11.2px;
+    -moz-border-radius: 11.2px;
+    -ms-border-radius: 11.2px;
+    -o-border-radius: 11.2px;
+}
  @keyframes spinner {
     0% {
         opacity: 1;
